@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="slim/slim.min.css">
+    <style>
+        .slim,#preview {
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slim" data-did-load="slimService" data-service-format="file">
+        <!-- <img src="https://t2.cdn.dubaosheng.com/default/2018/01/11/test/hkJ9tlZsgSeeEP765bddg22piyVBEdzHHwfWmtGq" alt=""> -->
+        <!-- <input name="image" type="file"/> -->
+    </div>
+    <img id="preview">
+
+    <script src="slim/slim.kickstart.min.js"></script>
+    <script>
+        function slimService(formdata, progress, success, failure, slim) {
+            // console.log(formdata);
+
+            // var imageUrl = window.URL.createObjectURL(formdata[0]);
+            // document.querySelector("#preview").src = imageUrl;
+
+            // success('success');
+            console.log(formdata)
+        }
+    </script>
+</body>
+</html>
